@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta name="author" content="Thomas Finnegan">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home</title>
+<style>
+* {
+  box-sizing: border-box;
+  }
+  
+body {
+		font-family:  Arial, Calibri, Comic Sans;
+		
+		background-color:#87CEEB;
+		max-width: 900px;
+		margin: 0 auto; 
+		padding: 20px; 
+	
+}
+
+a:hover {
+  background-color: yellow;
+  font-size: 18px;
+}
+
+h1{
+	text-align: center;
+	font-family: Goudy Old style, Helvetica, sans-serif;
+	color: #01377d;
+	}
+
+p{
+	font-family: Goudy Old style, Helvetica, sans-serif;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	font-family: Goudy Old style, Helvetica, sans-serif;
+	color: #01377d;
+	font-size: 18;
+	width: 900px;
+}
+
+.column {
+  float: left;
+  width: 900px;
+  padding: 10px;
+  height: 150px;
+}
+
+<!-- Below is linked with the broken code on line 136 onwards up to line 149 -->
+.column2 {
+  float: left;
+  width: 33%;
+}
+<!-- Rest is fine for now -->
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+
+img.one {
+  height: 40px;
+  width: 900px;
+
+}
+
+img.two {
+	height: 50px;
+	width: 50px;
+}
+
+img.three {
+	height: 50px;
+	width: 50px;
+}
+
+img.four {
+	height: 00%;
+	width: 00%;
+}
+
+</style>
+</head>
+<body>
+
+<img src="images/Banner.png" alt="Banner saying Mobile World Station" width="900" height="150">
+
+<p>
+<script>
+//Time of day message script- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Modified by Neil Wickham
+//Credit must stay intact for use
+var Digital=new Date()
+var hours=Digital.getHours()
+//Configure message below to your own.
+if (hours>=0&&hours<=12) //MESSAGE FOR MORNING (00:00-11:59)
+document.write('<b>Good Morning, welcome to our website.</b>')
+else if (hours>12&&hours<=17) //MESSAGE FOR AFTERNOON (12:01-17:00)
+document.write('<b>Good Afternoon, welcome to our website.</b>')
+else //MESSAGE FOR THE REST OF THE DAY (17:00-23:59)
+document.write('<b>Good Evening, welcome to our website.</b>')
+</script>
+ </p>
+
+<h2>
+<a href="index.htm">Home</a> | 
+  <a href="samsung.htm">Samsung Products</a> | 
+  <a href="apple.htm">Apple Products</a> | 
+  <a href="accessories.htm">Accessories</a> | 
+  <a href="packages.htm">Packages</a> | 
+  <a href="insurance.htm">Insurance</a> | 
+  <a href="aboutus.htm">About Us</a> | 
+  <a href="contactus.htm">Contact Us</a>  
+</h2>
+
+<p>
+<img class="one" src="images/scarletred1.PNG" alt="The colour Scarlet Red" width="300" height="300"><br>
+</p>
+
+
+<div class="row">
+   <div class="column" style="background-color:#aaa;">
+    <h2>Introduction</h2>
+    <p>Hello and Welcome to the website where we help you compare prices and for you to check out many different phones from many different brands.</p>
+  </div>
+ <hr>
+</div>
+
+<p>
+<img class="one" src="images/scarletred1.PNG" alt="The colour Scarlet Red" width="300px" height="300px"><br>
+</p>
+
+<!-- Fix the code below -->
+
+<div class="row">
+  <div class="column2" style="background-color:#aaa;"> <h1> We have a page for Phones which consist of Apple and Samsung Phones so far but we willa dd more in the future if people are wanting some </h1> </div>
+  <div class="column2" style="background-color:#aab;"> <h1> We have pages for Accessories and packages just in case you want a little more than just a phone </h1> </div>
+  <div class="column2" style="background-color:#aac;"> <h1> We have a Insurance page so you can find insurances and we also have a page for who we are and how you can contact us </h1> </div>
+</div>
+ 
+</body>
+</html>
